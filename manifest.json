@@ -1,19 +1,27 @@
 {
   "name": "Nuvio BR",
-  "version": "0.3.0",
-  "description": "Fornecedor experimental para localizar arquivos de vídeo disponíveis publicamente no Internet Archive.",
+  "version": "0.4.0",
+  "description": "Fornecedor experimental que prioriza arquivos de vídeo com indicação de idioma português no Internet Archive.",
   "scrapers": [
     {
       "id": "nuvio-br-archive",
       "name": "CVN-Nuvio BR",
-      "description": "Busca filmes no Internet Archive sem exigir chave TMDB. Não garante disponibilidade nem dublagem PT-BR.",
-      "version": "0.3.0",
+      "description": "Busca filmes no Internet Archive e prioriza itens identificados como português. A indicação de idioma não garante dublagem.",
+      "version": "0.4.0",
       "author": "Nuvio BR",
-      "supportedTypes": ["movie"],
+      "supportedTypes": [
+        "movie"
+      ],
       "filename": "providers/nuvio-br-archive.js",
       "enabled": true,
-      "formats": ["mp4", "m4v", "webm"],
-      "contentLanguage": ["en", "pt"],
+      "formats": [
+        "mp4",
+        "m4v",
+        "webm"
+      ],
+      "contentLanguage": [
+        "pt"
+      ],
       "limited": false,
       "disabledPlatforms": []
     }
