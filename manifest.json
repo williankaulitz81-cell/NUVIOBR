@@ -1,29 +1,20 @@
 {
   "name": "Nuvio BR",
-  "version": "0.2.0",
-  "description": "Fornecedor experimental que busca vídeos no Internet Archive. Foco em obras públicas/autorizadas; dublagem PT-BR depende do arquivo.",
+  "version": "0.3.0",
+  "description": "Fornecedor experimental para localizar arquivos de vídeo disponíveis publicamente no Internet Archive.",
   "scrapers": [
     {
       "id": "nuvio-br-archive",
-      "name": "🇧🇷 Nuvio BR • Internet Archive",
-      "description": "Busca filmes no Internet Archive; requer chave da API TMDB. Não garante áudio dublado em português.",
-      "version": "0.2.0",
+      "name": "CVN-Nuvio BR",
+      "description": "Busca filmes no Internet Archive sem exigir chave TMDB. Não garante disponibilidade nem dublagem PT-BR.",
+      "version": "0.3.0",
       "author": "Nuvio BR",
-      "supportedTypes": [
-        "movie"
-      ],
+      "supportedTypes": ["movie"],
       "filename": "providers/nuvio-br-archive.js",
       "enabled": true,
-      "hasSettings": true,
-      "formats": [
-        "mp4",
-        "m4v",
-        "webm"
-      ],
-      "contentLanguage": [
-        "en",
-        "pt"
-      ],
+      "formats": ["mp4", "m4v", "webm"],
+      "contentLanguage": ["en", "pt"],
+      "limited": false,
       "disabledPlatforms": []
     }
   ]
