@@ -1,6 +1,30 @@
 {
-  "name": "Nuvio BR (em desenvolvimento)",
-  "version": "0.1.0",
-  "description": "Estrutura inicial para um fornecedor Nuvio com foco em português brasileiro. Ainda não possui fontes de reprodução.",
-  "scrapers": []
+  "name": "Nuvio BR",
+  "version": "0.2.0",
+  "description": "Fornecedor experimental que busca vídeos no Internet Archive. Foco em obras públicas/autorizadas; dublagem PT-BR depende do arquivo.",
+  "scrapers": [
+    {
+      "id": "nuvio-br-archive",
+      "name": "🇧🇷 Nuvio BR • Internet Archive",
+      "description": "Busca filmes no Internet Archive; requer chave da API TMDB. Não garante áudio dublado em português.",
+      "version": "0.2.0",
+      "author": "Nuvio BR",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/nuvio-br-archive.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m4v",
+        "webm"
+      ],
+      "contentLanguage": [
+        "en",
+        "pt"
+      ],
+      "disabledPlatforms": []
+    }
+  ]
 }
