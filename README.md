@@ -1,21 +1,25 @@
 # Nuvio BR
 
-Projeto comunitário em desenvolvimento para testar fornecedores compatíveis com o Nuvio, com foco em conteúdo em português brasileiro (áudio e legendas quando a fonte disponibilizar).
+Fornecedor **experimental** para Nuvio. A versão atual tenta localizar filmes no Internet Archive.
 
 ## Estado atual
 
-**Ainda não é um fornecedor funcional.** Este repositório contém apenas a estrutura inicial. Não adicione o manifesto ao Nuvio esperando encontrar filmes até que exista pelo menos um adaptador implementado e testado.
+- O código e o manifesto foram publicados.
+- A integração ainda não foi validada dentro do aplicativo Nuvio.
+- Nesta versão, apenas filmes são considerados; séries não estão implementadas.
+- A busca usa a API do TMDB e pede uma chave pessoal nas configurações do fornecedor.
+- A disponibilidade de vídeo, áudio em português brasileiro e legendas depende dos arquivos encontrados. Não há garantia de dublagem PT-BR.
 
-## Importante
+## Instalação para teste
+
+Manifesto:
+`https://raw.githubusercontent.com/williankaulitz81-cell/NUVIOBR/main/manifest.json`
+
+Adicione esse endereço ao Nuvio apenas para teste. Se o fornecedor aparecer mas não encontrar resultados ou falhar ao reproduzir, isso significa que a integração precisa de ajustes.
+
+## Limitações e uso responsável
 
 - O projeto não hospeda filmes, séries, áudio nem legendas.
-- O idioma do áudio depende da faixa de áudio fornecida pela fonte; um manifesto não consegue transformar áudio original em dublagem.
-- Use apenas fontes para as quais você tenha autorização de acesso.
-- O NiakVIO que já funciona no seu Nuvio deve continuar instalado enquanto este projeto é desenvolvido.
-
-## Próximos passos técnicos
-
-1. Confirmar a API e o formato de fornecedor aceito pela versão do Nuvio usada.
-2. Implementar um adaptador para uma fonte legal/autorizada.
-3. Testar busca, reprodução, seleção de áudio e legendas.
-4. Só então publicar um manifesto de instalação.
+- O Internet Archive contém materiais variados; confira a licença e a autorização de cada item antes de reproduzir ou redistribuir.
+- Uma chave TMDB é usada para localizar o título; ela não fornece o vídeo nem a dublagem.
+- Mantenha o NiakVIO instalado enquanto testa esta versão.
